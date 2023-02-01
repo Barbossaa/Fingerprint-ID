@@ -258,9 +258,15 @@ int getFingerprintIDez() {
   Wire.setClock(10000); 
   lcd.clear();
   lcd.setCursor(0, 0);
-  lcd.print("Name:Samet Eker");
+  lcd.print("Name:Ankara Mesi");
   lcd.setCursor(0, 1);
-  lcd.print("TC:48070125940");
-  delay(2000);
+  lcd.print("ID:K12-34-5679");
+  delay(3000);
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("DOB: 09/03/1984");
+  lcd.setCursor(0, 1);
+  lcd.print("Class: AB");
+  delay(3000);
   return finger.fingerID;
 }
